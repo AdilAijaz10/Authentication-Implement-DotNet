@@ -16,7 +16,7 @@ namespace Authentication_Implement_DotNet.Controllers
         {
             _repo = repo;
         }
-        
+        [Authorize]
         [HttpGet("get1")]
         public IActionResult Get()
         {
