@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Authentication-Implement-DotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2715b42257995c5374d8f4df3af82c7eb8c41fe1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Authentication-Implement-DotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Authentication-Implement-DotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
