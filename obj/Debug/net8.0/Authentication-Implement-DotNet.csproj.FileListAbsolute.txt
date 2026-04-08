@@ -36,10 +36,10 @@ D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\staticwebassets.development.json
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\swae.build.ex.cache
-D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\Authenti.4BA8D948.Up2Date
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\Authentication-Implement-DotNet.dll
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\refint\Authentication-Implement-DotNet.dll
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\Authentication-Implement-DotNet.pdb
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\Authentication-Implement-DotNet.genruntimeconfig.cache
 D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\ref\Authentication-Implement-DotNet.dll
+D:\softwareProjects\.NetProjects\Authentication-Implement-DotNet\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -11,7 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // JWT Config
-var key = "ThisIsMySecretKey12345"; // simple key for now
+//var key = builder.Configuration["Jwt:Key"];
+var key = builder.Configuration["Jwt:Key"];
 
 builder.Services.AddAuthentication(options =>
 {
@@ -50,7 +51,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Enter 'Bearer' followed by your JWT token. Example: 'Bearer eyJhbGciOi...'"
+        Description = "Enter your JWT token directly. Example: 'eyJhbGciOi...'"
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -68,9 +69,12 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
+
+
 // ✅ Register JwtService
 builder.Services.AddSingleton(
-    new JwtService("ThisIsMySuperSecretKey1234567890ABCDEF")
+    new JwtService(key)
 ); 
 var app = builder.Build();
 
@@ -82,7 +86,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); // IMPORTANT
+app.UseAuthentication(); 
 
 app.UseAuthorization();
 

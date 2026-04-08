@@ -3,6 +3,7 @@ using Authentication_Implement_DotNet.Models;
 using Authentication_Implement_DotNet.Repositories;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Authentication_Implement_DotNet.Controllers
 {
@@ -28,6 +29,18 @@ namespace Authentication_Implement_DotNet.Controllers
             }
 
             return Unauthorized("Invalid credentials");
+        }
+
+        [Authorize]
+        [HttpGet("debug")]
+        public IActionResult Debug()
+        {
+            return Ok(new
+            {
+                IsAuth = User.Identity?.IsAuthenticated,
+                Name = User.Identity?.Name,
+                Claims = User.Claims.Select(c => new { c.Type, c.Value })
+            });
         }
     }
 }

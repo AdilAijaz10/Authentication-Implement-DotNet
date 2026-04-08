@@ -36,6 +36,18 @@
         }
       }
     },
+    "/api/Auth/debug": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Hello/get1": {
       "get": {
         "tags": [
@@ -143,7 +155,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Enter 'Bearer' followed by your JWT token. Example: 'Bearer eyJhbGciOi...'",
+        "description": "Enter your JWT token directly. Example: 'eyJhbGciOi...'",
         "scheme": "Bearer",
         "bearerFormat": "JWT"
       }
