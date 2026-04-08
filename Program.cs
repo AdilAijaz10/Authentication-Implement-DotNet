@@ -75,7 +75,14 @@ builder.Services.AddSwaggerGen(c =>
 // ✅ Register JwtService
 builder.Services.AddSingleton(
     new JwtService(key)
-); 
+);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        p => p.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod());
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -86,6 +93,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAll");
 app.UseAuthentication(); 
 
 app.UseAuthorization();

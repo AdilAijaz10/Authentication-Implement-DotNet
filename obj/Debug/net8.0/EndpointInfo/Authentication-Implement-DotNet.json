@@ -72,6 +72,27 @@
         }
       }
     },
+    "/api/Secret/validate": {
+      "get": {
+        "tags": [
+          "Secret"
+        ],
+        "parameters": [
+          {
+            "name": "key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [

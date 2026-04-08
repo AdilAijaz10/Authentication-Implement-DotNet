@@ -1,9 +1,6 @@
 ﻿using Authentication_Implement_DotNet.Services;
-using Authentication_Implement_DotNet.Models;
-using Authentication_Implement_DotNet.Repositories;
-using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Authentication_Implement_DotNet.Controllers
 {
